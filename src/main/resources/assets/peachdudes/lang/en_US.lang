@@ -1,0 +1,13 @@
+item.peachdude.name=Peach Dude
+item.peach_sundae.name=Peach Sundae
+
+entity.tca-core.peachdude.name=PeachDude
+
+tile.block_peachdude.name=Peach
+
+subtitle.mob.peachdude.hurt=peachdude hurt sound
+subtitle.mob.peachdude.boing=boing
+subtitle.mob.peachdude.death=peachdude died
+subtitle.mob.peachdude.scream=peachdude scream
+
+itemGroup.tabPeachDudes.name=Peach Dudes

@@ -1,0 +1,35 @@
+{
+	"peachdude.hurt": {
+		"category": "neutral",
+		"subtitle": "subtitle.mob.peachdude.hurt",
+		"sounds": [
+		"peachdudes:mob/peachdude/hurt1",
+		"peachdudes:mob/peachdude/hurt2",
+		"peachdudes:mob/peachdude/hurt3"
+		]
+	},
+	"peachdude.scream": {
+		"category": "neutral",
+		"subtitle": "subtitle.mob.peachdude.scream",
+		"sounds": [
+		"peachdudes:mob/peachdude/scream1",
+		"peachdudes:mob/peachdude/scream2",
+		"peachdudes:mob/peachdude/scream3"
+		]
+	},
+	"peachdude.death": {
+		"category": "neutral",
+		"subtitle": "subtitle.mob.peachdude.death",
+		"sounds": [
+		"peachdudes:mob/peachdude/death1",
+		"peachdudes:mob/peachdude/death2"
+		]
+	},
+	"peachdude.boing": {
+		"category": "neutral",
+		"subtitle": "subtitle.mob.peachdude.boing",
+		"sounds": [
+		"peachdudes:mob/peachdude/boing"
+		]
+	}
+}

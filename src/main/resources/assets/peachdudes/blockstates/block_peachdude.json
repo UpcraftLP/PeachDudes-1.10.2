@@ -1,0 +1,11 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "peachdudes:block_peachdude",
+		"transform": "forge:default-block"
+    },
+	"variants": {
+		"normal": [{}],
+		"inventory": [{}]
+    }
+}
