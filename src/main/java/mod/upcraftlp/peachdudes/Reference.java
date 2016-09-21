@@ -31,9 +31,9 @@ public class Reference {
 	public static final String MODNAME = "Peach Dudes Mod";
 	public static final String MOD_ID = "peachdudes";
 	public static final String DEPENDENCIES = "required-after:tca-core@[0.1.0-b1]";
-	public static final String URL = "";
-	public static final String UPDATE_URL = ""; //CurseForge page
-	public static final String INTERNAL_UPDATE_URL = ""; //GitHub link to the Version.txt file
+	public static final String URL = "https://minecraft.curseforge.com/projects/peachdudes-mod";
+	public static final String UPDATE_URL = "https://minecraft.curseforge.com/projects/peachdudes-mod/files";
+	public static final String INTERNAL_UPDATE_URL = "https://raw.githubusercontent.com/UpcraftLP/PeachDudes-1.10.2/master/Version.txt";
 	public static final String CLIENT_PATH = "mod.upcraftlp.peachdudes.proxy.ClientProxy";
 	public static final String SERVER_PATH = "mod.upcraftlp.peachdudes.proxy.ServerProxy";
 	public static final String VERSION = MAJOR + "." + MINOR + "." + PATCH + "-b" + BUILD;

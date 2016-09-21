@@ -1,6 +1,8 @@
 package mod.upcraftlp.peachdudes.proxy;
 
 import github.tca.core.API.ModRegistry;
+import github.tca.core.API.ModUpdate;
+import mod.upcraftlp.peachdudes.Reference;
 import mod.upcraftlp.peachdudes.crafting.ShapedCrafting;
 import mod.upcraftlp.peachdudes.events.GenerationHandler;
 import mod.upcraftlp.peachdudes.init.PeachBlocks;
@@ -17,6 +19,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent event) {
+		ModUpdate.registerMod(Reference.MOD_ID, Reference.VERSION, Reference.INTERNAL_UPDATE_URL, Reference.UPDATE_URL);
 		PeachSounds.init();
 		PeachBlocks.init();
 		PeachItems.init();
