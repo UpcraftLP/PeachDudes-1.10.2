@@ -51,7 +51,7 @@ minecraft {
 dependencies {
 
 	//craftdev-core
-	compile files("/../CraftDev-Core-1.10.2/build/libs/craftdev-core-1.10.2-0.1.0-b1.jar")
+	compile files("/../CraftDev-Core/build/libs/craftdev-core-1.10.2-0.1.0-b1.jar")
 	//compile 'core.upcraftlp.craftdev'
 
 
