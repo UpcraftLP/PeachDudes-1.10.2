@@ -3,7 +3,7 @@ package mod.upcraftlp.peachdudes.blocks;
 import java.util.ArrayList;
 import java.util.List;
 
-import github.tca.core.API.templates.BasicBlock;
+import core.upcraftlp.craftdev.API.templates.Block;
 import mod.upcraftlp.peachdudes.entity.EntityPeachdude;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -14,7 +14,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockPeachDude extends BasicBlock {
+public class BlockPeachDude extends Block {
 
 	public BlockPeachDude() {
 		super("block_peachdude", Material.LEAVES);
@@ -45,7 +45,7 @@ public class BlockPeachDude extends BasicBlock {
 		return false;
 	}
 	
-	@Override
+	@Override	
 	public boolean isReplaceable(IBlockAccess worldIn, BlockPos pos) {
 		return true;
 	}

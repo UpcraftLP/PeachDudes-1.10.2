@@ -58,15 +58,18 @@ public class EntityPeachdude extends EntityCreature {
 	
 	@Override
 	protected void initEntityAI() {
+		this.tasks.addTask(2, new EntityAIWatchClosest(this, EntityPlayer.class, 16));
 		this.tasks.addTask(1, new EntityAISwimming(this));
 		this.tasks.addTask(10, new EntityAIWander(this, 0.8D));
 	    this.tasks.addTask(11, new EntityAIWatchClosest(this, EntityPlayer.class, 10.0F));
 	}
 	
-	public void spawn() {
-		this.worldObj.spawnEntityInWorld(this);
+	public EntityPeachdude spawn() {
 		this.setPositionAndUpdate(this.posX, this.posY, this.posZ);
 		this.playScreamSound();
+		this.setAlwaysRenderNameTag(false);
+		this.worldObj.spawnEntityInWorld(this);
+		return this;
 	}
 	
 	public EntityPeachdude(World worldIn) {

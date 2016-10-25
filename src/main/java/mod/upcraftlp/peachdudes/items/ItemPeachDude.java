@@ -2,7 +2,7 @@ package mod.upcraftlp.peachdudes.items;
 
 import java.util.Random;
 
-import github.tca.core.API.templates.BasicFood;
+import core.upcraftlp.craftdev.API.templates.ItemFood;
 import mod.upcraftlp.peachdudes.entity.EntityPeachdude;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -13,7 +13,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ItemPeachDude extends BasicFood {
+public class ItemPeachDude extends ItemFood {
 
 	Random random = new Random();
 	

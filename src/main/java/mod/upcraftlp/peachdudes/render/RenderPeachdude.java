@@ -9,7 +9,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderPeachdude extends RenderLivingBase<EntityPeachdude> {
 
-	private static final ResourceLocation ENTITY_TEXTURE = new ResourceLocation(Reference.MOD_ID, "textures/entity/peachdude.png");
+	private static final ResourceLocation ENTITY_TEXTURE = new ResourceLocation(Reference.MODID, "textures/entity/peachdude.png");
 	
 	public RenderPeachdude(RenderManager renderManagerIn) {
 		super(renderManagerIn, new ModelPeachDude(), 0.2f);

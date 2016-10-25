@@ -1,9 +1,13 @@
 package mod.upcraftlp.peachdudes.init;
 
-import github.tca.core.API.templates.BasicTab;
-import net.minecraft.creativetab.CreativeTabs;
+import core.upcraftlp.craftdev.API.templates.CreativeTab;
+import net.minecraft.item.ItemStack;
 
 public class PeachTabs {
 
-	public static CreativeTabs tabPeachDudes = new BasicTab("tabPeachDudes", PeachItems.PEACH_SUNDAE);
+	public static CreativeTab tabPeachDudes = new CreativeTab("tabPeachDudes", false);
+	
+	public static void setIcons() {
+		tabPeachDudes.setIconStack(new ItemStack(PeachItems.PEACH_SUNDAE));
+	}
 }

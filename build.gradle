@@ -20,7 +20,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.10.2-0.1.0-b2"
+version = "1.10.2-0.2.0-b3"
 group= "mod.upcraftlp.peachdudes" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "peachdudes"
 
@@ -30,7 +30,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.10.2-12.18.1.2077"
+    version = "1.10.2-12.18.2.2114"
     if(file('../run').exists()) {
 		runDir = "../run"
 	}
@@ -42,7 +42,7 @@ minecraft {
     // the mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   snapshot are built nightly.
     // stable_#            stables are built at the discretion of the MCP team.
-    // Use non-default mappings at your own risk. they may not allways work.
+    // Use non-default mappings at your own risk. they may not always work.
     // simply re-run your setup task after changing the mappings to update your workspace.
     mappings = "snapshot_20160518"
     makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
@@ -50,8 +50,9 @@ minecraft {
 
 dependencies {
 
-	//tca-core
-	compile files("/libs/tca-core-1.10.2-0.1.0-b1.jar")
+	//craftdev-core
+	compile files("/../CraftDev-Core-1.10.2/build/libs/craftdev-core-1.10.2-0.1.0-b1.jar")
+	//compile 'core.upcraftlp.craftdev'
 
 
     // you may put jars on which you depend on in ./libs

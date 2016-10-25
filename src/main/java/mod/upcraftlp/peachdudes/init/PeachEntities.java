@@ -1,6 +1,6 @@
 package mod.upcraftlp.peachdudes.init;
 
-import github.tca.core.API.ModRegistry;
+import core.upcraftlp.craftdev.API.common.ModRegistry;
 import mod.upcraftlp.peachdudes.entity.EntityPeachdude;
 import mod.upcraftlp.peachdudes.render.RenderPeachdude;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;

@@ -2,11 +2,11 @@ package mod.upcraftlp.peachdudes.items;
 
 import java.util.Random;
 
-import github.tca.core.API.templates.BasicFood;
+import core.upcraftlp.craftdev.API.templates.ItemFood;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
 
-public class ItemPeachSundae extends BasicFood {
+public class ItemPeachSundae extends ItemFood {
 
 	Random random = new Random();
 	

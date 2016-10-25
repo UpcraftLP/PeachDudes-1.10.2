@@ -1,6 +1,6 @@
 package mod.upcraftlp.peachdudes;
 
-import github.tca.core.API.ModLogger;
+import core.upcraftlp.craftdev.API.common.ModLogger;
 import mod.upcraftlp.peachdudes.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -10,13 +10,13 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(name = Reference.MODNAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MCVERSIONS, modid = Reference.MOD_ID, canBeDeactivated = false, dependencies = Reference.DEPENDENCIES)
+@Mod(name = Reference.MODNAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MCVERSIONS, modid = Reference.MODID, canBeDeactivated = false, dependencies = Reference.DEPENDENCIES)
 public class Main {
 
-	private static ModLogger logger = new ModLogger(Reference.MOD_ID);
+	private static ModLogger log = new ModLogger(Reference.MODID);
 	
 	public static ModLogger getLogger() {
-		return logger;
+		return log;
 	}
 	
 	@Instance
@@ -28,19 +28,19 @@ public class Main {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit(event);
-		logger.printFML("Pre-Initialization finished.");
+		log.println("Pre-Initialization finished.");
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
-		logger.printFML("Initialization finished.");
+		log.println("Initialization finished.");
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		proxy.postInit(event);
-		logger.printFML("Post-Initialization finished.");
+		log.println("Post-Initialization finished.");
 	}
 	
 	
