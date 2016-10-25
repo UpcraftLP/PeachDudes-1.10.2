@@ -7,8 +7,6 @@ import mod.upcraftlp.peachdudes.Reference;
 import mod.upcraftlp.peachdudes.init.PeachBlocks;
 import mod.upcraftlp.peachdudes.init.PeachEntities;
 import mod.upcraftlp.peachdudes.init.PeachItems;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

@@ -1,7 +1,7 @@
 item.peachdude.name=Peach Dude
 item.peach_sundae.name=Peach Sundae
 
-entity.tca-core.peachdude.name=PeachDude
+entity.craftdev-core.peachdude.name=Peach Dude
 
 tile.block_peachdude.name=Peach
 
