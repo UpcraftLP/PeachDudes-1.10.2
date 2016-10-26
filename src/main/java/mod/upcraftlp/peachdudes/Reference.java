@@ -14,7 +14,7 @@ public class Reference {
 	
 	//increase when fixing bugs;
 	//set to 0 when MINOR version increases
-	private static final int PATCH = 0;
+	private static final int PATCH = 1;
 	
 	//increase every time code is changed and pushed to GitHub;
 	//never decrease
