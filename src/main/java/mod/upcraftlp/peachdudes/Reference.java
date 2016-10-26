@@ -18,7 +18,15 @@ public class Reference {
 	
 	//increase every time code is changed and pushed to GitHub;
 	//never decrease
-	private static final int BUILD = 3;
+	private static final int BUILD = 4;
+	
+	//current version of CraftDev-Core codebase version when releasing this mod
+		//must be equal or the coremod won't allow Forge to launch successfully!
+		public static final int CODEBASE = 1;
+		
+		//current build of CraftDev-Core when releasing this mod
+		//must be lower than or equal to the current build of the coremod!
+		public static final int MINIMUM_BUILD = 2;
 	
 	/** TEAM **/
 	
@@ -30,7 +38,7 @@ public class Reference {
 	//DO NOT CHANGE!!!
 	public static final String MODNAME = "Peach Dudes Mod";
 	public static final String MODID = "peachdudes";
-	public static final String DEPENDENCIES = "required-after:craftdev-core@[0.1.0-b1]";
+	public static final String DEPENDENCIES = "required-after:craftdev-core";
 	public static final String URL = "https://minecraft.curseforge.com/projects/peachdudes-mod";
 	public static final String UPDATE_URL = "https://minecraft.curseforge.com/projects/peachdudes-mod/files";
 	public static final String INTERNAL_UPDATE_URL = "https://raw.githubusercontent.com/UpcraftLP/PeachDudes-1.10.2/master/Version.txt";
@@ -38,4 +46,6 @@ public class Reference {
 	public static final String SERVER_PATH = "mod.upcraftlp.peachdudes.proxy.ServerProxy";
 	public static final String VERSION = MAJOR + "." + MINOR + "." + PATCH + "-b" + BUILD;
 	public static final String ID_PREFIX = MODID + ":";
+
+	
 }

@@ -12,7 +12,7 @@ public class PeachEntities {
 	}
 	
 	public static void registerRenders() {
-		RenderingRegistry.registerEntityRenderingHandler(EntityPeachdude.class, RenderPeachdude::new);
+		RenderingRegistry.registerEntityRenderingHandler(EntityPeachdude.class, RenderPeachdude.FACTORY);
 	}
 	
 }

@@ -1,6 +1,8 @@
 package mod.upcraftlp.peachdudes;
 
+import core.upcraftlp.craftdev.API.common.ModHelper;
 import core.upcraftlp.craftdev.API.common.ModLogger;
+import core.upcraftlp.craftdev.API.common.ModRegistry;
 import mod.upcraftlp.peachdudes.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -27,6 +29,8 @@ public class Main {
 		
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		ModHelper.validateCodeBase(Reference.CODEBASE, Reference.MINIMUM_BUILD, Reference.MODID);
+		ModRegistry.registerMod(Reference.MODID, Reference.VERSION, Reference.INTERNAL_UPDATE_URL, Reference.UPDATE_URL);
 		proxy.preInit(event);
 		log.println("Pre-Initialization finished.");
 	}

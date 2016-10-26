@@ -1,1 +1,1 @@
-1.10.2-0.2.0-b3
+1.10.2-0.2.0-b4-Added codebase verification support for the coremod
